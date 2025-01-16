@@ -1,0 +1,36 @@
+# Python-specific files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+*.env
+*.venv
+
+# Poetry
+poetry.lock
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Test output
+.coverage
+.cache/
+pytest_cache/
+
+# System-specific
+Thumbs.db
+.idea/
+.vscode/
