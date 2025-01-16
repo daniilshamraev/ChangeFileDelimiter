@@ -11,13 +11,13 @@
 
 ## Installation
 
-### Using Poetry
+### Using Git
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/changefiledelimiter.git
-   cd changefiledelimiter
+   git clone https://github.com/daniilshamraev/ChangeFileDelimiter.git
+   cd ChangeFileDelimiter
    ```
 
 2. Install dependencies:
@@ -26,20 +26,20 @@
    poetry install
    ```
 
-3. Build and install the package locally:
+3. Add the tool to your PATH for global usage:
 
    ```bash
-   poetry build
-   pip install dist/changefiledelimiter-0.1.0-py3-none-any.whl
+   export PATH="$PATH:$(pwd)/changefiledelimiter"
    ```
 
-### From PyPI (Coming soon)
+4. Alternatively, create a symbolic link for global access:
 
-Once the package is published to PyPI, you can install it with:
+   ```bash
+   sudo ln -s $(pwd)/changefiledelimiter/app.py /usr/local/bin/changefiledelimiter
+   chmod +x /usr/local/bin/changefiledelimiter
+   ```
 
-```bash
-pip install changefiledelimiter
-```
+Now you can use the `changefiledelimiter` command globally.
 
 ## Usage
 
@@ -104,8 +104,8 @@ poetry run pytest
 1. Склонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/yourusername/changefiledelimiter.git
-   cd changefiledelimiter
+   git clone https://github.com/daniilshamraev/ChangeFileDelimiter.git
+   cd ChangeFileDelimiter
    ```
 
 2. Установите зависимости с помощью Poetry:
@@ -114,12 +114,20 @@ poetry run pytest
    poetry install
    ```
 
-3. Соберите пакет и установите его локально:
+3. Добавьте инструмент в PATH для глобального использования:
 
    ```bash
-   poetry build
-   pip install dist/changefiledelimiter-0.1.0-py3-none-any.whl
+   export PATH="$PATH:$(pwd)/changefiledelimiter"
    ```
+
+4. Либо создайте символическую ссылку для глобального доступа:
+
+   ```bash
+   sudo ln -s $(pwd)/changefiledelimiter/app.py /usr/local/bin/changefiledelimiter
+   chmod +x /usr/local/bin/changefiledelimiter
+   ```
+
+Теперь команда `changefiledelimiter` доступна глобально.
 
 ### Использование
 
